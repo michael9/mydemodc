@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:gifview="http://schemas.android.com/apk/res/gifview.com"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout 
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+        >
+        <TextView 
+            android:id="@+id/myprogressdlg_title"
+               android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:text="@string/ui_downloading_dice"
+    />
+
+    <gifview.com.GifView
+           android:id="@+id/gfview"
+            android:layout_width="170dp"
+    android:layout_height="70dp" 
+    android:src="@drawable/t822"    
+        />
+  
+    </LinearLayout>
+    
+</RelativeLayout>

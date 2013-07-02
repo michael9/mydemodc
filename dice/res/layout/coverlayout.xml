@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/cover_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wb01" />
+<!--  
+    <WebView
+        android:id="@+id/myadview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/dlg_botton_background"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/cover_open"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/menu_btn"
+            android:scaleType="fitXY"
+            android:src="@drawable/open" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ui_coverlayout_open"
+            android:textColor="@color/textwhite"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/dlg_botton_background"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/cover_peek"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/menu_btn"
+            android:scaleType="fitXY"
+            android:src="@drawable/eye2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ui_coverlayout_peek"
+            android:textColor="@color/textwhite"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</RelativeLayout>

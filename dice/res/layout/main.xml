@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/tplayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/tb01"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true" />
+
+                <RelativeLayout
+                    android:id="@+id/dplayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <!-- 第一行 -->
+
+                    <ImageView
+                        android:id="@+id/div1"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter" />
+
+                    <ImageView
+                        android:id="@+id/div2"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_toRightOf="@id/div1"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter" />
+
+                    <ImageView
+                        android:id="@+id/div3"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_toRightOf="@id/div2"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter" />
+                    <!-- 第二行 -->
+
+                    <ImageView
+                        android:id="@+id/div4"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_below="@id/div1"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter" />
+
+                    <ImageView
+                        android:id="@+id/div5"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_below="@id/div2"
+                        android:layout_toRightOf="@id/div4"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter" />
+
+                    <ImageView
+                        android:id="@+id/div6"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_below="@id/div3"
+                        android:layout_toRightOf="@id/div5"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter" />
+                    <!-- 第三行 -->
+
+                    <ImageView
+                        android:id="@+id/div7"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_below="@id/div4"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter" />
+
+                    <ImageView
+                        android:id="@+id/div8"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_below="@id/div5"
+                        android:layout_toRightOf="@id/div7"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter" />
+
+                    <ImageView
+                        android:id="@+id/div9"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_below="@id/div6"
+                        android:layout_toRightOf="@id/div8"
+                        android:padding="2dp"
+                        android:scaleType="fitCenter" />
+                </RelativeLayout>
+                
+           
+ <com.adwo.adsdk.AdwoAdView  
+        android:id="@+id/adView" 
+      
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content" > 
+</com.adwo.adsdk.AdwoAdView> 
+
+<!--  
+                <com.adview.AdViewLayout
+                    android:id="@+id/adviewbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+-->
+                <!--
+    <com.tencent.mobwin.AdView
+           android:id="@+id/adbar"
+       android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"  />
+       
+          
+        <com.admogo.AdMogoLayout
+           android:id="@+id/adbar"
+       android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"  
+     />
+   
+     <cn.domob.android.ads.DomobAdView
+         android:id="@+id/adbar"
+       android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"  
+    domobad:refreshInterval="20"    
+       />
+                -->
+<!--   -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/mainmenu_btn"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/menu_btn"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/setting" />
+                </LinearLayout>
+                <!--
+广告点击计分显示 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/integral" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="999 999 999 999"
+                        android:textColor="#ffe168" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/addsc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="+5"
+                    android:textColor="#ffe168"
+                    android:textSize="30dp" />
+                -->
+
+
+                <!--
+                用户等级状态
+           <RatingBar                        
+                      android:id="@+id/usrerat"
+                      android:numStars="5"
+                      android:rating="0"
+    style="?android:attr/ratingBarStyleSmall"     
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+                          />
+                -->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <SlidingDrawer
+                android:id="@+id/sd_dices"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:content="@+id/content"
+                android:handle="@+id/handle"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@id/handle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/handle" />
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/v" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@id/content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/wb01"
+                    android:orientation="vertical" >
+
+                    <!--
+          <WebView android:id="@+id/WebView" android:layout_width="fill_parent"  
+        android:layout_height="55dp" android:layout_gravity="center_horizontal"/>
+                    -->
+
+                    <GridView
+                        android:id="@+id/dice_slist"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:columnWidth="100px"
+                        android:gravity="center"
+                        android:horizontalSpacing="5px"
+                        android:layoutAnimation="@anim/layout_wave_scale"
+                        android:numColumns="4"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="35px" />
+
+                    <ImageButton
+                        android:id="@+id/helpbutton"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/menu_btn"
+                        android:src="@drawable/help_and_support" />
+                </RelativeLayout>
+            </SlidingDrawer>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

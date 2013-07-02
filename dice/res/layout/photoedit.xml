@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wb01"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/photoimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:scaleType="centerInside" />
+        <!--
+        <ImageView android:id="@+id/tgimage"
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scaleType="centerInside"  
+    android:src="@drawable/zy"
+    android:layout_centerInParent="true"
+    android:clickable="true"
+    android:focusable="true"
+   />
+        -->
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/sharebutton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/menu_btn"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_btn_actionmenu_share_pressed" />
+
+</RelativeLayout>
